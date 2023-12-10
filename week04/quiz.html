@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+    <form>
+    <h1>สมัครเรียน(เสาร์-อาทิตย์)</h1> 
+      <div class="content">
+         <div class="row">
+            <div class="col-lg-6"><br>
+                <label for="validationDefault04" class="form-label">คณะ/สาขาวิชา|Faculty/Major</label><span class="text-danger">*</span>
+                <select class="form-select" id="validationDefault04" required >
+                  <option selected disabled value="">เลือก</option>
+                  <option>คณะวิทยาศาสตร์และเทคโนโลยี|สาขาวิชาวิทยาการคอมพิวเตอร์
+                  <option>คณะวิทยาศาสตร์และเทคโนโลยี|สาขาวิชาชีวอนามัยและความปลอดภัย
+                  <option>คณะวิทยาศาสตร์และเทคโนโลยี|สาขาวิชาโภชการและการกำหนดอาหาร
+                          
+                  </option>
+                </select>
+              </div>
+            </div>
+
+         <div class="row">
+            <div class="col-lg-3"><br>
+                <label for="validationDefault04" class="form-label">สัญชาติ|nationality</label><span class="text-danger">*</span>
+                <select class="form-select" id="validationDefault04" required>
+                  <option selected disabled value="">เลือก</option>
+                  <option>คนไทย|thai
+                  <option>ต่างชาติ|foreign     
+                  </option>
+                </select>
+              </div>
+
+            <div class="col-lg-3"><br>
+                <label for="validationDefault04" class="form-label">เพศ|sex</label><span class="text-danger">*</span>
+                <select class="form-select" id="validationDefault04" required>
+                  <option selected disabled value="">เลือก</option>
+                  <option>ชาย|mam
+                  <option>หญิง|womam    
+                  </option>
+                </select>
+              </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-2"><br>
+                    <label for="validationDefault01" class="form-label">คำนำหน้าชื่อ|prefix</label><span class="text-danger">*</span>
+                    <input type="text" class="form-control" id="validationDefault01" value="" required>
+                  </div>
+                  <div class="col-md-2"><br>
+                    <label for="validationDefault02" class="form-label">ชื่อ|name</label><span class="text-danger">*</span>
+                    <input type="text" class="form-control" id="validationDefault02" value="" required>
+                  </div>
+                  <div class="col-md-2"><br>
+                    <label for="validationDefault02" class="form-label">นามสกุล|surname</label><span class="text-danger">*</span>
+                    <input type="text" class="form-control" id="validationDefault02" value="" required>
+                  </div>
+                  <div class="col-md-2"><br>
+                    <label for="validationDefault02" class="form-label">บัตรประชาชน|ID card</label><span class="text-danger">*</span>
+                    <input type="text number" class="form-control" id="validationDefault02" value="" required>
+                  </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-2"><br>
+                    <label for="validationDefault01" class="form-label">เบอร์โทรศัพท์|telephone number</label><span class="text-danger">*</span>
+                    <input type="text number" class="form-control" id="validationDefault01" value="" required>
+                </div>
+                <div class="col-md-2"><br>
+                    <label for="validationDefault01" class="form-label">อีเมล|email</label><span class="text-danger">*</span>
+                    <input type="text email" class="form-control" id="validationDefault01" value="" required>
+                </div>
+                  
+                <div class="col-md-2"><br>
+                    <label for="validationDefault01" class="form-label">ID Line</label><span class="text-danger">(ถ้ามี)</span>
+                    <input type="text" class="form-control" id="validationDefault01" value="" required>
+                </div>
+                <div class="col-md-2"><br>
+                    <label for="validationDefault01" class="form-label">FaceBook</label><span class="text-danger">(ถ้ามี)</span>
+                    <input type="text" class="form-control" id="validationDefault01" value="" required>
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-2"><br>
+                <label for="validationDefault04" class="form-label">วุฒิการศึกษา|Educational qualification</label><span class="text-danger">*</span>
+                <select class="form-select" id="validationDefault04" required>
+                  <option selected disabled value="">เลือก</option>
+                  <option>ม.6/High School
+                  <option>ปวช./Vocational Certificate   
+                  <option>ปวส./High Vocational Certificate
+                  <option>อนุปริญญา/Diploma 
+                  <option>ปริญญาตรี/Bacheor Degree
+                  </option>
+                </select>
+              </div>
+
+               <div class="col-md-4"><br>
+                <label for="validationDefault01" class="form-label">ชื่อสถานศึกษาเดิม|Name of original educational institution</label><span class="text-danger">*</span>
+                <input type="text number" class="form-control" id="validationDefault01" value="" required>
+               </div>
+
+               <div class="col-lg-2"><br>
+                <label for="validationDefault04" class="form-label">จังหวัด|county</label><span class="text-danger">*</span>
+                <select class="form-select" id="validationDefault04" required>
+                  <option selected disabled value="">เลือก</option>
+                  <option>ต่างชาติ
+                  <option>นครราชสีมา
+                  <option>กรุงเทพมหานคร  
+                  <option>พระนครศรีอยุธา
+                  <option>สระบุรี
+                  <option>ปทุมธานี
+                  </option>
+                </select>
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col-md-2"><br>
+                <label for="validationDefault02" class="form-label">สาขาวิชาที่เรียนจบ</label><span class="text-danger">*</span>
+                <input type="text" class="form-control" id="validationDefault02" value="" required>
+              </div>
+              <div class="col-md-2"><br>
+                <label for="validationDefault02" class="form-label">ผลการเรียนเฉลี่ย</label><span class="text-danger">(GPAX)</span>
+                <input type="text" class="form-control" id="validationDefault02" value="" required>
+              </div>
+               <div class="col-lg-2"><br>
+                <label for="validationDefault04" class="form-label">ต้องการกู้ กยศ./กรอ.</label><span class="text-danger">*</span>
+                <select class="form-select" id="validationDefault04" required>
+                  <option selected disabled value="">เลือก</option>
+                  <option>ต้องการ
+                  <option>ไม่ต้องการ     
+                  </option>
+                </select>
+              </div>
+            </div>
+
+
+            <div class="row">
+               <div class="col-lg-2"><br>
+                <label for="validationDefault04" class="form-label">ทราบข่าวสารการสมัครจาก</label><span class="text-danger">*</span>
+                <select class="form-select" id="validationDefault04" required>
+                  <option selected disabled value="">เลือก</option>
+                  <option>เว็บไซต์(Website)
+                  <option>FaceBook    
+                  <option>ป้ายโฆษณา(Billboard)    
+                  <option>เพื่อน(Friends) 
+                  <option>ครูแนะแนว(Guidance teacher)
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-4"><br>
+                <div class="mb-3">
+                  <label for="formFile" class="form-label">เอกสารแนบ</label><span class="text-danger">ผลการเรียน เฉพาะชื่อ-นามสกุล(PDF)</span>
+                  <input class="form-control" type="file" id="formFile">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+               <div class="col-12"><br>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  <span class="text-danger">*  ผู้มีสิทธิ์เข้าศึกษาชำระเงินลงทะเบียนตามวันที่มหาวิทยาลัยกำหนด หากไม่ชำระเงินถือว่าสละสิทธิ์ และมหาวิทยาลัยจะไม่คืนเงินที่ชำระไว้ทุกกรณี<br>
+                                            *  หากตรวจสอบพบว่า มีการปลอมแปลงวุฒิการศึกษา หรือเอกสารหลักฐานในการสมัครมหาวิทยาลัยจะถอนสภาพการเป็นนักศึกษาและดำเนินคดีตามกฎหมาย</span>
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <div class="col-12"><br>
+              <button class="btn btn-primary" type="submit">ยืนยัน</button>
+              <button class="btn btn-danger" type="submit">ยกเลิก</button>
+            </div>
+            
+
+            </div>
+           
+           
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
