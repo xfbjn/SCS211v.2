@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!---navbar--->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!---alert--->
+    <div class="container">
+      <div class="alert alert-warning alert-dismissible fade show" role="alert" >
+        <strong>ประกาศ!!</strong> ร้านหยุดทุกวันพุธนะคะ
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
+    </div>
+    <!---breadcumb--->
+    <div class="container">
+      <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">หน้าหลัก</a></li>
+          <li class="breadcrumb-item"><a href="#">อุปกรณ์เครื่องเขียน</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            ปากกา
+          </li>
+        </ol>
+      </nav>
+    </div>
+
+    <!---2 columms : carousel/information--->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="true"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://th.bing.com/th/id/OIP.XyS3AvTJ6RD_Pmtx_4n6wQHaHa?rs=1&pid=ImgDetMain"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://cf.shopee.co.th/file/181ca3f0b120bdf8f5f0121b3a15d313"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+             
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h1>
+            ปากกาเจล Pentel 
+            ปากกาลูกลื่น
+            <span class="badge bg-danger">New</span>
+          </h1>
+          <div class="row">
+            <div
+              class="col-10 d-flex justify-content-between align-items-center"
+            >
+              <div class="ratings">
+                <i class="bi-star-fill"></i>
+                <i class="bi-star-fill"></i>
+                <i class="bi-star-fill"></i>
+                <i class="bi-star-fill"></i>
+                <i class="bi-star"></i>
+                <i class="">4.9</i>
+              </div>
+            </div>
+            <div class="col-lg text-end">
+              <i class="bi bi-share"></i>
+              <i class="bi bi-heart"></i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg">
+              <a href="#">อุปกรณ์เครื่องเขียน</a>
+            </div>
+            <div class="col-lg">
+              <p class="text-end">ฟรีค่าส่ง</p>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-lg">
+              <h3>฿99.00</h3>
+            </div>
+            <div class="col-lg-3 text-end">
+              <button
+                type="button"
+                class="btn btn-link"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                NANTAPON
+              </button>
+            </div>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      NANTAPON
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>ร้าน NANTAPON ยินดีต้อนรับจ้า</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2">
+              <p>จำนวน</p>
+            </div>
+            <div class="col-lg-3">
+              <div class="input-group">
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  onclick="increaseQuantity()"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-plus-lg"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+                    />
+                  </svg>
+                </button>
+
+                <input
+                  type="text"
+                  value="1"
+                  id="quantityInput"
+                  class="form-control text-center"
+                  placeholder=""
+                  aria-label="Example text with two button addons"
+                />
+
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  onclick="decreaseQuantity()"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-dash-lg"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <script>
+            function increaseQuantity() {
+              var input = document.getElementById("quantityInput");
+              input.value = parseInt(input.value, 10) + 1;
+            }
+
+            function decreaseQuantity() {
+              var input = document.getElementById("quantityInput");
+              if (parseInt(input.value, 10) > 0) {
+                input.value = parseInt(input.value, 10) - 1;
+              }
+            }
+          </script>
+          <br />
+
+          <div class="row">
+            <button type="button" class="btn btn-light">ใส่ตะกร้าสินค้า</button>
+          </div>
+        </div>
+      </div>
+      <!---2 columms : accordion / card--->
+      <div class="row">
+        <div class="col-lg-9">
+          <h3>หมวดหมู่</h3>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  รายละเอียดสินค้า
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>ปากกาเจล ปากกาลูกลื่น</strong> <br />
+                   ผลิตและนำเข้าจากประเทศญี่ปุ่น (Made in Japan)<br />
+                   เขียนลื่น จดมัน<br />
+                   
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  คุณสมบัติสินค้า
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong> 1. วัสดุ: กระเป๋าดินสอทำจากวัสดุคุณภาพ</strong>
+                  ทำให้ปากาไม่ซึมทะลุกระดาษ<br />
+                  <strong>2. การใช้งาน: พกพาสะดวก ใช้งานง่าย</strong> สำหรับจดงาน
+                  ในชีวิตประจำวัน ถ้าหมึกหมดสารารถซื้อไส้เปลี่ยนได้ตามร้านเครื่องเขียน<br />
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  ตารางค่าจัดส่ง
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>อัตราค่าจัดส่ง (บาท)</strong>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">ราคาสินค้า</th>
+                        <th scope="col">ค่าจัดส่ง</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1-200</td>
+                        <td>ฟรี</td>
+                      </tr>
+                      <tr>
+                        <td>201-300</td>
+                        <td>50 บาท</td>
+                      </tr>
+                      <tr>
+                        <td>301-400</td>
+                        <td>80 บาท</td>
+                      </tr>
+                      <tr>
+                        <td>มากว่า 500</td>
+                        <td>100 บาท</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <h3>สินค้าอื่นๆ....</h3>
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://th.bing.com/th/id/OIP.7kT0KvjmXsd-3eUyQp588AHaHa?rs=1&pid=ImgDetMain"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">ปากกาเจล</h5>
+              <p class="card-text">ราคา 99 บาท</p>
+            </div>
+            <div class="card-body">
+              <a href="#" class="card-link">ซื้อสินค้า</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
