@@ -1,0 +1,25 @@
+<body>
+    <button onclick="getMovies();">รายชื่อ</button>
+    <div id="content"></div>
+    <script>
+      async function getMovies() {
+        //basic function style
+        try {
+          let promise = await fetch("https://reactnative.dev/movies.json");
+          let movies_object = await promise.json();
+          console.log("success:", movies_object);
+          let movies = movies_object.movies;
+          let contentDiv = document.querySelector("#content");
+          for(let item of movies){
+              console.log(item);
+              let newDiv = document.createElement("div");
+              newDiv.innerHTML = item.title + " | " + item.releaseYear;
+              contentDiv.appendChild(newDiv);
+          }      
+        } catch (error) {
+          console.log("fail", error);
+        }
+      }
+    </script>
+  </body>
+  
